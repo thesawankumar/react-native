@@ -110,6 +110,7 @@ const styles = StyleSheet.create({
   headerText: {
     fontSize: 24,
     textAlign: "center",
+    marginTop:30,
     marginBottom: 12,
   },
   footerText: {
