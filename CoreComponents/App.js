@@ -6,6 +6,7 @@ import {
   Pressable,
   Modal,
   StatusBar,
+  ActivityIndicator,
 } from "react-native";
 import { useState } from "react";
 const logo = require("./assets/adaptive-icon.png");
@@ -20,11 +21,11 @@ export default function App() {
           style={{ width: 300, height: 300 }}
         />
       </ScrollView> */}
-      <Button
+      {/* <Button
         title="login"
         onPress={() => setIsModalVisible(true)}
         color="midnightblue"
-      />
+      /> */}
       {/* <Pressable onPress={() => console.log("Image pressed")}>
         <Image source={logo} style={{ width: 300, height: 300 }} />
       </Pressable>
@@ -70,7 +71,8 @@ export default function App() {
           />
         </View>
       </Modal> */}
-      <StatusBar backgroundColor="lightgreen" barStyle="light-content" />
+      {/* <StatusBar backgroundColor="lightgreen" barStyle="light-content" /> */}
+      <ActivityIndicator />
     </View>
   );
 }
