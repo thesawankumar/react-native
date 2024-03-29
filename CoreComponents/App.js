@@ -1,4 +1,12 @@
-import { View, Button, Text, Image, Pressable, Modal } from "react-native";
+import {
+  View,
+  Button,
+  Text,
+  Image,
+  Pressable,
+  Modal,
+  StatusBar,
+} from "react-native";
 import { useState } from "react";
 const logo = require("./assets/adaptive-icon.png");
 export default function App() {
@@ -47,7 +55,7 @@ export default function App() {
           a line in section 1.10.3
         </Text>
       </Pressable> */}
-      <Modal
+      {/* <Modal
         visible={isModalVisible}
         onRequestClose={() => setIsModalVisible(false)}
         animationType="slide"
@@ -61,7 +69,8 @@ export default function App() {
             onPress={() => setIsModalVisible(false)}
           />
         </View>
-      </Modal>
+      </Modal> */}
+      <StatusBar backgroundColor="lightgreen" barStyle="light-content" />
     </View>
   );
 }
