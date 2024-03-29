@@ -7,6 +7,7 @@ import {
   Modal,
   StatusBar,
   ActivityIndicator,
+  Alert,
 } from "react-native";
 import { useState } from "react";
 const logo = require("./assets/adaptive-icon.png");
@@ -72,7 +73,25 @@ export default function App() {
         </View>
       </Modal> */}
       {/* <StatusBar backgroundColor="lightgreen" barStyle="light-content" /> */}
-      <ActivityIndicator />
+      {/* <ActivityIndicator /> */}
+      <Button title="Alert" onPress={() => Alert.alert("Invallid data")} />
+      <Button
+        title="Alert 2"
+        onPress={() => Alert.alert("Invallid data", "Dob incorrect")}
+      />
+      <Button
+        title="Alert 3"
+        onPress={() =>
+          Alert.alert("Alert Title", "My Alert Msg", [
+            {
+              text: "Cancel",
+              onPress: () => console.log("Cancel Pressed"),
+              style: "cancel",
+            },
+            { text: "OK", onPress: () => console.log("OK Pressed") },
+          ])
+        }
+      />
     </View>
   );
 }
