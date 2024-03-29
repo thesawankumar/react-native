@@ -1,6 +1,6 @@
 import { StyleSheet, View, Text, SafeAreaView, Platform } from "react-native";
 import CustomButton from "./components/CustomButton";
-
+//platform specific code
 export default function App() {
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: "plum" }}>
