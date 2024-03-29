@@ -6,6 +6,7 @@ import {
   FlatList,
   StatusBar,
   SectionList,
+  ScrollView,
 } from "react-native";
 import pokemonList from "./data.json";
 import groupedPokemonList from "./grouped-data.json";
@@ -13,7 +14,7 @@ import groupedPokemonList from "./grouped-data.json";
 export default function App() {
   return (
     <SafeAreaView styles={styles.container}>
-      {/* <ScrollView style={styles.scrollView}>
+      <ScrollView style={styles.scrollView}>
         {pokemonList.map((pokemon) => {
           console.log(pokemon.id);
           return (
@@ -23,8 +24,8 @@ export default function App() {
             </View>
           );
         })}
-      </ScrollView> */}
-      {/* <View style={styles.scrollView}>
+      </ScrollView>
+      <View style={styles.scrollView}>
         <FlatList
           data={pokemonList}
           renderItem={({ item }) => {
@@ -53,7 +54,7 @@ export default function App() {
           }
           // horizontal={true}
         />
-      </View> */}
+      </View>
       <View style={styles.scrollView}>
         <SectionList
           sections={groupedPokemonList}
